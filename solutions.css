@@ -1,5 +1,6 @@
 /*
-the poin of excercise
+the point of  animation-filter excercise slide e video n° 10
+
 selettore {
   transition: secondi;
 }
@@ -7,13 +8,9 @@ selettore:hover {
   proprietà: volute;
   transform: scale(0.8);
   filter: sepia(0.2) saturate(0.5);
+  animation: Name 2s linear infinite;
 }
-
-work in progres:
-selettore {
-  animation spin
-}
-@keyframes spin {
+@keyframes Name {
   rotate ecc
 }
 */
@@ -95,9 +92,61 @@ selettore {
 
 /* <!-- Esercizio 10 --> */
 .ex-10-icon {
- animation: spiin 2s linear infinite;
+ animation: spiin 1s linear infinite;
 }
 @keyframes spiin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% { transform: rotate(360deg); }
 }
+
+/* <!-- Esercizio 11 --> */
+.ex-11-icon:hover {
+ animation: aquarter 2s linear;
+}
+@keyframes aquarter {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  /* 100% { transform: rotate(0deg); } */
+}
+
+/* <!-- Esercizio 12 --> */
+.ex-12-button:hover .ex-12-top-white {
+  animation: anteora 2s linear;
+}
+@keyframes anteora {
+  /* 0% { left: 10%; } */
+  50% { left: calc(100% - 60px); }
+  /* 100% { left: 10%; } */
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: antedown 2s linear;
+}
+@keyframes antedown {
+  /* 0% { right: 10%; } */
+  50% { right:  calc(100% - 60px); }
+  /* 100% { right: 10%; } */
+}
+
+/* <!-- Esercizio 13 --> */
+.ex-13-button:hover .ex-13-top-white {
+  animation: sopra-girotot 2s linear;
+}
+@keyframes sopra-girotot {
+  33% { right: calc(100%); }
+  50% { bottom: calc(100%); }
+  83% { left: calc(100%); }
+  99.6% { top: calc(100%); }
+  100% { right: calc(10%); }
+
+}
+/* .ex-13-button:hover .ex-13-bottom-white {
+  animation: sotto-girotot 2s linear;
+}
+@keyframes sotto-girotot {
+  33.2% { left: calc(100%); }
+  49.8% { top: calc(100%); }
+  83% { right: calc(100%); }
+  99.6% { bottom: calc(100%); }
+  100% { left: calc(20%); }
+} */
